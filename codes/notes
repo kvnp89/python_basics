@@ -1,0 +1,8 @@
+read 2 csv and store as parque into s31
+
+sns request when new file stored in s31 message email
+sns topic should subsribed my event bridgr and trigger lambda 
+lambda should trigger glue job to join the two parque files and loadd into s32
+use sqs to send message after glue is complete 
+cloud watch should send all events status messages as email using cloud watch 
+all tbis should happen in terraform 
